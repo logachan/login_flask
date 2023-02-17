@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+    </head>
+    <body>
+        <div class="container">
+          <h1>Register Form</h1>
+            <form action="{{url_for('register')}}" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter a password">
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+                
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter your location">
+        
+                <button type="submit">Register</button>
+            </form>
+        </div>   
+    </body>
+</html>
